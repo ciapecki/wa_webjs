@@ -14,7 +14,7 @@ app.listen(port, () => {
 });
 
 
-app.get('/number/:number/message/:message', (request, response) => {
+app.get('/:number/:message', (request, response) => {
   console.log(request.params.number);
   console.log(request.params.message);
 
